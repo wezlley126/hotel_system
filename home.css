@@ -1,0 +1,29 @@
+.quarto1{
+  text-align: center;
+  border: solid 2px black;
+  width: 33%;
+}
+
+.quarto1 img{
+  width: 268px;
+  height: 188px;
+}
+
+.quartos1{
+  border: solid 1px;
+  margin: 4px;
+  background-color: green;
+  padding: 6px;
+  font-size: 20px;
+  display: flex;
+}
+
+.quartos1:hover{
+  background-color: red;
+  transition: 0.2s;
+}
+
+#div_pai{
+  display: inline-flex;
+  width: 100%;
+}
