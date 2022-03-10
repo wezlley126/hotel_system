@@ -3,27 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Registrar</title>
+    <link rel="stylesheet" href="../css/home.css">
   </head>
-  <body style="text-align: center;">
-    <form class="" action="../php/criar_user.php" method="post">
-      nome <br/>
+  <div class="form_log">
+    <div class="logimage"></div>
+      <form class="log" action="../php/criar_user.php" method="post">
+      <label for="">Nome</label>
+      <br/>
       <input type="text" name="nome" value=""> <br>
-      sobrenome <br/>
-      <input type="text" name="sobrenome" value=""> <br>
-      nascimento <br/>
-      <input type="date" name="nascimento" value=""> <br>
-      saldo <br/>
-      <input type="number" step="0.01" maxlength="18" name="saldo" value=""> <br>
-      email <br/>
-      <input type="email" maxlength="255" name="email" value=""> <br>
-      senha <br/>
-      <input type="password" name="senha" value=""> <br/>
-      CPF <br/>
+      <label>Sobrenome</label>
+      <br/>
+      <input type="text" name="sobrenome" value=""> 
+      <br>
+      <label for="">Nascimento</label> 
+      <br/>
+      <input type="date" name="nascimento" value=""> 
+      <br>
+      <label for="">Saldo</label> 
+      <br/>
+      <input type="number" step="0.01" maxlength="18" name="saldo" value=""> 
+      <br>
+      <label for="">E-mail</label> 
+      <br/>
+      <input type="email" maxlength="255" name="email" value=""> 
+      <br>
+      <label for="">Senha</label> 
+      <br/>
+      <input type="password" name="senha" value=""> 
+      <br/>
+      <label for="">CPF</label> 
+      <br/>
       <input type="text" maxlength="14" name="CPF" value=""> <br>
 
-
       <input style="margin: 8px;" type="submit" name="enviar" value="Registrar">
-
     </form>
+  </div>
+  </div>
+  <div class="direitos">
+    <p>Todos os direitos esta reservados ao grupo InforCompany, para mais nos acompanhe em nossas redes sociais
+       <ul>
+         <li><a href=""><img src="" alt=""></a></li>
+       </ul>
+    </p>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="../css/home.css">
 
 <div id="div_pai">
 <?php
