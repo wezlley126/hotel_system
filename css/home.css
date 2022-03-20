@@ -1,8 +1,25 @@
+
+/*
+======================
+Css Wesley
+======================
+*/
 *{
   box-sizing: content-box;
   margin: 0;
-
 }
+.conta_criada{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
+.conta_existente{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
 .quarto1{
   text-align: center;
   border: solid 2px black;
@@ -17,51 +34,101 @@
 .quartos1{
   border: solid 1px;
   margin: 4px;
-  background-color: green;
+  background-color: #228B22;
   padding: 6px;
   font-size: 20px;
   display: flex;
-}
-
-.quartos1:hover{
-  background-color: red;
-  transition: 0.2s;
 }
 
 #div_pai{
   display: inline-flex;
   width: 100%;
 }
+
+.alugar_button{
+  background-color: #B22222;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: 100px;
+  width: 80px;
+  height: 25px;
+  text-decoration: none;
+}
+
+.alugar_button:hover{
+  background-color: #00FFFF;
+  transition: 0.5s;
+}
+/*
+=====================
+Form Family
+====================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /*
 ======================
-Form User 
-Formulario de usuario 
+Form User
+Formulario de usuario de registro
 ======================
 */
-.form_log{
-  width: 100%;
-  height: 600px;
-  background-color: aquamarine;
-  display: flex;
-}
-.logimage{
-  display: inline-flex;
-  width: 800px;
-  height: 600px;
+
+.form{
   background-image: url("../images/quartos/pexels-pixabay-164595.jpg");
-  background-size: 800px 600px;
   background-repeat: no-repeat;
+  background-size: 1500px 1000px;
+  width: 100%;
+  height: 100%;
 }
 .log{
-  display: inline;
-  width: 300px;
-  height: 520px;
-  color: wheat;
-  background-color: black;
-  padding: 40px;
+  padding-top: 50px;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  background-color: #ffffff98;
+  background-size: 500px 500px;
+  margin-top: 150px;
+  margin-left: 400px;
+  border-radius: 100px;
+  font-family: 'Courier New', Courier, monospace;
 }
 .log label{
   text-align: center;
+}
+.log input[type="text"]{
+  width: 200px;
+  outline: none;
+}
+.log input[type=number]{
+  outline: none;
+}
+.log input[type=email]{
+  outline: none;
+}
+.log input[type=submit] {
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: Teal;
+  color: #fff;
+  height: 50px;
+  width: 100px;
+}
+.log input[type=button]{
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: red;
+  color: #fff;
+  height: 50px;
+  width: 100px
+}
+.log h1{
+  font-family: 'Grand Hotel', cursive;
+  font-size: 50px;
+  color: #333;
+  text-shadow: 2px 2px rgb(255, 255, 255);
 }
 /**
 =======================
@@ -71,9 +138,201 @@ Formulario de usuario
 .direitos{
   display: inline-block;
   width: 100%;
-  height: 100%;
-  background-color: brown;
+  height: 200px;
+  background-color: #F2F2F2;
+}
+.direitos ul{
+  list-style-type: none;
 }
 .direitos{
   text-align: center;
+}
+.direitos img{
+  width: 20px;
+  height: 20px
+}
+@media screen {
+  
+}
+/*
+========================
+Form de usuario de login
+========================
+*/
+
+/*
+========================
+Menu and layout for Menu Main
+Menu é layout do Menu principral
+========================
+*/
+.Menu{
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(226, 221, 221, 0.849));
+  height: 60px;
+}
+.Menu .logo{
+  padding-left: 120px;
+  font-family: 'Bebas Neue', cursive;
+  
+}
+.Menu li{
+  padding-left: 110px;
+  display: inline;
+}
+.Menu li img{
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+}
+.Menu ul li a{
+  color: black;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+/*
+============================
+Main content Layout
+============================
+*/
+.MainContent{
+  background-image: url("../images/imagedohotel.jpg");
+  background-size: 1400px 600px;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+.MainContent1{
+  background-image: linear-gradient(to right, rgba(226, 226, 226, 0.768), rgba(128, 128, 128, 0.849));
+  background-size: 100% 300px;
+  height: 300px;
+  border: 2px solid black;
+}
+.MainContent1 h2{
+  padding-top: 20px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Bebas Neue', cursive;
+}
+.MainContent1 p{
+  padding-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+/*
+===========================
+Grid Main Layout 
+==========================
+*/
+main{
+  background-color: #333;
+}
+.gridlayout{
+  display: grid;
+  width: 600px;
+  height: 800px;
+  background-image: linear-gradient(to left , rgba(0, 0, 0, 0.542), rgba(4, 4, 4, 0.522));
+  grid-template-columns: 750px 600px;
+  margin: 0;
+  grid-template-rows: 600px 300px;
+  border: 2px solid black;
+}
+.item{
+  background-color: #F2F2F2;
+}
+.quarto{
+  background-image: url("../images/quartos/pexels-pixabay-164595.jpg");
+  background-repeat: no-repeat;
+  background-size: 750px 600px;
+}
+.quarto2{
+  background-image: url("../images/quartos/quarto1.jpeg")
+}
+.subgrid{
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 300px 300px;
+}
+.item1{
+  background-image: url("../images/quartos/quarto1.jpeg");
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  height: 300px;
+  width: 300px;
+}
+.item2{
+  border: 2px solid black;
+  background-color: rgb(255, 255, 255);
+  height: 300px;
+  width: 300px;
+}
+.item3{
+  height: 300px;
+  width: 300px;
+  border: 3px solid black;
+}
+.item4{
+  background-image: url("../images/quartos/quarto2.jpeg");
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  height: 300px;
+  width: 300px;
+}
+.infor{
+  border: 2px solid black;
+}
+.quarto1{
+  background-image: url("../images/quartos/quarto3.jpeg");
+  background-repeat: no-repeat;
+  background-size: 800px 298px;
+  width: 800px;
+  height: 300px;
+}
+/* informações dos item de quarto*/
+.item3 h3{
+  text-align: center;
+}
+.item2 h3{
+  text-align: center;
+}
+.infor h3{
+  text-align: center;
+}
+.alugar{
+  background-color: #333;
+  padding: 10px;
+  margin-top: 50px;  
+  text-decoration: none;
+  color: white;
+  margin-left: 100px;
+}
+/*
+===================
+Footer layout
+==================
+*/
+.inforextra{
+  margin-top: 100px;
+  background-color: black;
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 500px 445px 405px;
+}
+.coluno1{
+  width: 500px;
+  height: 600px;
+  background-image: linear-gradient(to right rgba(255, 21, 21, 0.563), rgba(255, 13, 13, 0.535));
+  background-repeat: no-repeat;
+  background-size: 500px 600px;
+
+}
+.coluno2{
+  width: 445px;
+  height: 600px;
+  background-color: #F2F2F2;
+}
+.coluno3{
+  height: 600px;
+  width: 405px;
+  background-color: gold;
 }
