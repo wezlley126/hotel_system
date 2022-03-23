@@ -10,18 +10,18 @@
 <body class="BodyLog">
     <div class="wallkpaperlog">
          <div><!--Image para o layout do form--></div>
-         <form action="" class="LoginImage">
+         <form method="post" action="../php/login.php" class="LoginImage">
             <label for="email">E-mail</label>
             <br>
             <input type="email" name="email" >
             <br>
             <label for="">senha</label>
             <br>
-            <input type="number" maxlength="50" minlength="10" name="senha">
+            <input type="password" name="senha">
             <br>
-            <label for="cpf">CPF</label>
+            <label for="CPF">CPF(opcional)</label>
             <br>
-            <input type="number" name="cpf">
+            <input type="number" maxlength="14" minlength="14" name="CPF">
             <br>
             <input type="submit" value="Enviar Dados">
             <a href=""><button>Cancela</button></a>

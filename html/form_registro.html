@@ -9,38 +9,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
   </head>
   <body class="form">
-      <form class="log" action="../php/filtro.php" method="post">
+      <form class="log" action="../php/criar_user.php" method="post">
       <h1>Horizont Hotel</h1>
       <h2>login</h2>
       <label for="">Nome</label>
       <br/>
-      <input type="text" name="nome" value="" placeholder="Nome"> <br>
+      <input type="text" name="nome" value="" placeholder="Nome" required> <br>
       <label>Sobrenome</label>
       <br/>
-      <input type="text" name="sobrenome" value="" placeholder="Sobrenome"> 
+      <input type="text" name="sobrenome" value="" placeholder="Sobrenome" required>
       <br>
-      <label for="">Nascimento</label> 
+      <label for="">Nascimento</label>
       <br/>
-      <input type="date" name="nascimento" value="">  
+      <input type="date" name="nascimento" value="" required>
       <br>
-      <label for="">Saldo</label> 
+      <label for="">Saldo</label>
       <br/>
-      <input type="number" step="0.01" maxlength="18" name="saldo" value="" placeholder="R$"> 
+      <input type="number" step="0.01" maxlength="18" name="saldo" value="" placeholder="R$" required>
       <br>
-      <label for="">E-mail</label> 
+      <label for="">E-mail</label>
       <br/>
-      <input type="email" maxlength="255" name="email" value="" placeholder="Email"> 
+      <input type="email" maxlength="255" name="email" value="" placeholder="Email" required>
       <br>
-      <label for="">Senha</label> 
+      <label for="">Senha</label>
       <br/>
-      <input type="password" name="senha" value="" placeholder="Digitei sua Senha"> 
+      <input type="password" name="senha" value="" placeholder="Digitei sua Senha" required>
       <br/>
-      <label for="">CPF</label> 
+      <label for="">CPF</label>
       <br/>
       <input type="text" maxlength="14" name="CPF" value="" placeholder="Digite seu CPF"> <br>
 
-      <input style="margin: 8px;" type="submit" name="enviar" value="Registrar">
       <a href="../home.php"><input type="button" value="Cancela" ></a>
+      <input style="margin: 8px;" type="submit" name="enviar" value="Registrar">
+
     </form>
   </body>
 </html>
