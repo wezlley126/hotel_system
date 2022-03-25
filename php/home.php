@@ -2,6 +2,8 @@
 <?php
 session_start();
 
+  var_dump($_SESSION['user']);
+
 if (isset($_SESSION['conta_criada'])) {
   if ($_SESSION['conta_criada'] == 1) {
     echo "<div class='conta_criada'>Conta criada com sucesso</div>";

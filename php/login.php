@@ -13,19 +13,12 @@
   $rows = mysqli_num_rows($query);
   if ($rows == 1) {
     echo "<br/> CONTA EXISTENTE <br/>";
+    $row = mysqli_fetch_row($query);
+    $_SESSION['user'] = new user;
+    $_SESSION['user'] -> alterar_dados($row[0], $row[1], $row[2], $row[3], $row[4], $row[5], $row[6]);
   }else {
     echo "<br/> CONTA INEXISTENTE <br/>";
   }
-
-  $nome = "weslley";
-  $sobrenome = "borges";
-  $nascimento = "2004-05-20";
-  $saldo = "200";
-  $email = "weslleyborges34@gmail.com";
-  $senha = "lelo2004";
-  $CPF = "";
-
-  $user = new user;
-  $user -> atribuir_dados($nome, $sobrenome, $nascimento, $saldo, $email, $senha, $CPF);
-  echo $user -> nome;
+  print_r($row);
+  var_dump($_SESSION['user']);
 ?>

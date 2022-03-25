@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once("../mysql/connect.php");
+include_once ("../poo/user.class.php");
 /*O filter dentro do myslq e para garantir que nenhuma insert */
 $nome = mysqli_escape_string($conect, $_POST['nome']);
 $sobrenome = mysqli_escape_string($conect, $_POST['sobrenome']);
@@ -30,6 +31,9 @@ if ($rows >= 1) {
 }else{
   $insere_dados = "INSERT INTO hospedes VALUES ('$nome', '$sobrenome', '$nascimento', '$saldo', '$email', '$senha', '$CPF', default)";
   $query = mysqli_query($conect, $insere_dados);
+  $_SESSION['user'] = new user;
+  $_SESSION['user'] -> alterar_dados($nome, $sobrenome, $nascimento, $saldo, $email, $senha, $CPF);
+  var_dump($_SESSION['user']);
 
   if ($query == true) {
     echo "<br/> DADOS INSERIDOS COM SUCESSO <br/>";

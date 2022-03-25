@@ -8,9 +8,7 @@
     protected $senha;
     protected $CPF;
 
-    protected function atribuir_dados($nome, $sobrenome, $nascimento, $saldo, $email, $senha, $CPF)
-    {
-      // code...
+    function alterar_dados($nome, $sobrenome, $nascimento, $saldo, $email, $senha, $CPF){
       $this -> nome = $nome;
       $this -> sobrenome = $sobrenome;
       $this -> nascimento = $nascimento;
@@ -19,5 +17,5 @@
       $this -> senha = $senha;
       $this -> CPF = $CPF;
     }
-  }
+}
 ?>
