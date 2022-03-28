@@ -166,173 +166,456 @@ Menu and layout for Menu Main
 Menu é layout do Menu principral
 ========================
 */
-.Menu{
-  background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(226, 221, 221, 0.849));
-  height: 60px;
-}
-.Menu .logo{
-  padding-left: 120px;
-  font-family: 'Bebas Neue', cursive;
-  
-}
-.Menu li{
-  padding-left: 110px;
-  display: inline;
-}
-.Menu li img{
-  margin-top: 5px;
-  width: 30px;
-  height: 30px;
-}
-.Menu ul li a{
-  color: black;
-  padding-bottom: 20px;
-  text-decoration: none;
-}
-/*
-============================
-Main content Layout
-============================
-*/
-.MainContent{
-  background-image: url("../images/imagedohotel.jpg");
-  background-size: 1400px 600px;
-  background-repeat: no-repeat;
-  height: 600px;
-}
-.MainContent1{
-  background-image: linear-gradient(to right, rgba(226, 226, 226, 0.768), rgba(128, 128, 128, 0.849));
-  background-size: 100% 300px;
-  height: 300px;
-  border: 2px solid black;
-}
-.MainContent1 h2{
-  padding-top: 20px;
-  text-align: center;
-  font-size: 40px;
-  font-family: 'Bebas Neue', cursive;
-}
-.MainContent1 p{
-  padding-top: 20px;
-  font-size: 18px;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-/*
-===========================
-Grid Main Layout 
-==========================
-*/
-main{
-  background-color: #333;
-}
-.gridlayout{
+.GridClient{
+  height: 2800px;
+  width: 1365px;
   display: grid;
-  width: 600px;
-  height: 800px;
-  background-image: linear-gradient(to left , rgba(0, 0, 0, 0.542), rgba(4, 4, 4, 0.522));
-  grid-template-columns: 750px 600px;
-  margin: 0;
-  grid-template-rows: 600px 300px;
-  border: 2px solid black;
+  grid-template-columns: 1365px;
+  grid-template-rows: 400px 100px 400px 400px 300px 400px 400px 400px;
+  grid-template-areas:  
+  "Menu"
+  "infor"
+  "QuartoDeAmostra"
+  "QuartoSeleção"
+  "InforExtra"
+  "Serviço"
+  "HotelInfor"
+  "Footer"
+  ;
 }
-.item{
+/*Menu*/
+.menu{
+  grid-area: Menu;
+  background-image: url("../images/layout/.jpg");
+  background-size: 1365px 400px;
+  background-repeat: no-repeat;
+}
+.menu ul{
   background-color: #F2F2F2;
+  width: 800px;
+  height: 30px;
+  margin-top: 40px;
+  margin-left: 300px;
+  padding: 20px;
 }
-.quarto{
-  background-image: url("../images/quartos/pexels-pixabay-164595.jpg");
+.menu ul li{
+  display: inline;
+  padding: 20px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: #A64F03;
+}
+/*
+Boans vindas
+*/
+.infor{
   background-repeat: no-repeat;
-  background-size: 750px 600px;
-}
-.quarto2{
-  background-image: url("../images/quartos/quarto1.jpeg")
-}
-.subgrid{
+  background-image: linear-gradient(to bottom right, #010326, #0b48ff);
+  grid-area: infor;
   display: grid;
-  grid-template-rows: 300px;
-  grid-template-columns: 300px 300px;
+  grid-template-areas:
+  "intro logo"
+  ;
 }
-.item1{
+.inforintro{
+  grid-area: intro;
+  font-size: 14px;
+  width: 1000px;
+}
+.inforintro p{
+  color: #fff;
+  padding-top: 20px;
+  padding-left: 80px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+}
+.inforlogo{
+  grid-area: logo;
+  width: 365px;
+  background-image: url("../images/layout/icons8-hotel-90.png");
+  background-image: 90px 90px;
+  background-repeat: no-repeat;
+}
+/*
+=================
+Quartos De Amostra
+=================
+*/
+.QuartoDeAmostra{
+  grid-area: QuartoDeAmostra;
+  display: grid;
+  grid-template-areas:  
+  "Quarto1 Quarto2"
+  ;
+}
+.AmostraQuarto1{
+  background-image: url("../images//quartos/quarto2.jpeg");
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  margin-left: 140px;
+  margin-top: 50px;
+  background-color: #282929;
+   width: 500px;
+   height: 300px;
+   grid-area: Quarto1;
+}
+.AmostraQuarto2{
+  background-image: url("../images/quartos/quarto1.jpeg");
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  grid-area: Quarto2;
+  background-color: #070707;
+  width: 500px;
+  height: 300px;
+}
+.InforAmostraQuarto{
+  margin-top: 300px;
+  background-color: #F2F2F2;
+  border: 2px solid black;
+}
+/*
+============================
+Seleçaõ de quarto
+============================
+*/
+.QuartosSeleção{
+   grid-area: QuartoSeleção;
+   background-image: linear-gradient(to bottom right, #010326, #0b48ff);
+   display: grid;
+   grid-template-areas: 
+   "Quarto1 Quarto2 Quarto3"
+   ;
+}
+.QuartoPadrão{
   background-image: url("../images/quartos/quarto1.jpeg");
   background-repeat: no-repeat;
   background-size: 300px 300px;
-  height: 300px;
+  margin-top: 20px;
+  margin-left: 60px;
   width: 300px;
-}
-.item2{
-  border: 2px solid black;
-  background-color: rgb(255, 255, 255);
   height: 300px;
-  width: 300px;
+  grid-area: Quarto1;
+
 }
-.item3{
-  height: 300px;
-  width: 300px;
-  border: 3px solid black;
-}
-.item4{
+.QuartoVip{
   background-image: url("../images/quartos/quarto2.jpeg");
   background-repeat: no-repeat;
   background-size: 300px 300px;
-  height: 300px;
+  margin-top: 20px;
+  grid-area: Quarto2;
   width: 300px;
+  height: 300px;
 }
-.infor{
-  border: 2px solid black;
-}
-.quarto1{
+.QuartoPremiun{
   background-image: url("../images/quartos/quarto3.jpeg");
   background-repeat: no-repeat;
-  background-size: 800px 298px;
-  width: 800px;
+  background-size: 300px 300px;
+  margin-top: 20px;
+  grid-area: Quarto3;
+  width: 300px;
   height: 300px;
 }
-/* informações dos item de quarto*/
-.item3 h3{
+.QuartosInfor{
+  margin-top: 250px;
+  background-color: #bdbdbd;
+  height: 100px;
+  color: #eee;
   text-align: center;
 }
-.item2 h3{
+/* 
+=======================
+Infor Extra
+=======================
+*/
+.InforExtra{
+  grid-area: InforExtra;
+  display: grid;
+  grid-template-areas:  
+  "Food Show Bar Config"
+  ;
+}
+.InforFood{
+  margin-left: 5px;
+  margin-top: 20px;
+  width: 320px;
+  grid-area: Food;
+  height: 320px;
+}
+.InforShow{ 
+  margin-top: 20px;
+  width: 320px;
+  height: 320px;
+  grid-area: Show; 
+}
+.InforBar{
+  margin-top: 20px;
+  height: 320px;
+  width: 320px;
+  grid-area: Bar;
+}
+.InforConfig{
+  height: 320px;
+  margin-top: 20px;
+  width: 320px;
+  grid-area: Config;
+}
+/*
+Infor config
+*/
+.InforFood div{
+  border-radius: 50px;
+  background-color: #ffc609;
+  margin-top: 30px; 
+  margin-left: 110px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/inforextra/icons8-comida-fast-food-street-food-18-100.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+}
+.InforFood h3{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 5px 5px 8px rgba(165, 9, 9, 0.83);
+}
+.InforFood p{
+  padding-top:20px ;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.InforShow div{
+  background-color: #ffc609;
+  border-radius: 50px;
+  margin-top: 30px; 
+  margin-left: 110px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/inforextra/icons8-falar-em-público-90.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+}
+.InforShow h3{
+  text-shadow: 5px 5px 8px rgba(100, 9, 165, 0.712);
+   text-align: center;
+   color: rgb(0, 0, 0);
+   font-family: 'Courier New', Courier, monospace;
+}
+.InforShow p{
+  padding-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.InforBar div{
+  background-color: #ffc609;
+  border-radius: 50px;
+  margin-top: 30px; 
+  margin-left: 112px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/inforextra/icons8-food-bar-100.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+}
+.InforBar h3{
+  text-align: center;
+  text-shadow: 5px 5px 8px rgba(255, 225, 0, 0.83);
+  color: rgb(0, 0, 0); 
+  font-family: 'Courier New', Courier, monospace;
+}
+.InforBar p{
+  font-size: 14px;
+  padding-top: 20px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.InforConfig div{
+  background-color: #ffc609;
+  border-radius: 50px;
+  margin-top: 30px; 
+  margin-left: 114px;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/inforextra/engrenagem.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+}
+.InforConfig h3{
+  text-shadow: 5px 5px 8px rgba(170, 122, 0, 0.83);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: 'Courier New', Courier, monospace;
+}
+.InforConfig p{
+  font-size: 14px;
+  text-align: center;
+  padding-top: 20px;
+  color: rgb(0, 0, 0);
+}
+/*
+==========================
+Infor de Serviço
+==========================
+*/
+.Serviço{
+  grid-area: Serviço;
+  display: grid;
+  grid-template-areas: 
+  "titulo titulo titulo" 
+  "ServiçoDeQuarto ServiçoDeLimpeza ServiçoDeCozinha"
+  ;
+}
+.Serviço h2{
+  grid-area: titulo;
+  text-shadow: 2px 2px 8px #d5b60b;
+  font-size: 30px;
+  padding-left: 540px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.ServiçoDeQuarto{
+  margin-left: 25px;
+  grid-area: ServiçoDeQuarto;
+  width: 400px;
+  height: 340px;
+}
+.ServiçoDeQuarto div{
+  border-radius: 110px;
+  margin-left: 40px;
+  background-position: center;
+  background-image: url("../images/layout/serviçodequarto.jpeg");
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+}
+.ServiçoDeQuarto h3{
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #0bd51c;
+  color: rgb(14, 14, 14);
+}
+.ServiçoDeQuarto  p{
+  text-shadow: 2px 2px 8px #d5b60b;
+  font-size: 14px;
   text-align: center;
 }
-.infor h3{
+.ServiçoDeLimpeza{
+  grid-area: ServiçoDeLimpeza;
+  width: 400px;
+  height: 340px;
+}
+.ServiçoDeLimpeza div{
+  border-radius: 110px;
+  margin-left: 40px;
+  background-position: center;
+  background-image: url("../images/layout/serviçp.jpeg");
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+}
+.ServiçoDeLimpeza h3{
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #0b19d5;
+  color: rgb(0, 0, 0);
+}
+.ServiçoDeLimpeza p{
+  font-size: 14px;
   text-align: center;
 }
-.alugar{
-  background-color: #333;
-  padding: 10px;
-  margin-top: 50px;  
-  text-decoration: none;
-  color: white;
-  margin-left: 100px;
+.ServiçoDeCozinha{ 
+  width: 400px;
+  height: 340px;
+  grid-area: ServiçoDeCozinha;
+}
+.ServiçoDeCozinha div{
+  border-radius: 110px;
+  margin-left: 40px;
+  background-position: center;
+  background-image: url("../images/layout/cozinha.jpeg");
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: 200px 200px;
+}
+.ServiçoDeCozinha h3{
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 8px #bd0d0d;
+  color: rgb(0, 0, 0);
+}
+.ServiçoDeCozinha p{
+  font-size: 14px;
+  text-align: center;
 }
 /*
 ===================
-Footer layout
-==================
+HotelInfor
+===================
 */
-.inforextra{
-  margin-top: 100px;
-  background-color: black;
-  width: 100%;
-  height: 600px;
+.HotelInfor{
+  border: 2px solid black;
+  grid-area: HotelInfor;
   display: grid;
-  grid-template-columns: 500px 445px 405px;
+  grid-template-areas:  
+  "feedback1 feedback2"
+  ;
 }
-.coluno1{
-  width: 500px;
-  height: 600px;
-  background-image: linear-gradient(to right rgba(255, 21, 21, 0.563), rgba(255, 13, 13, 0.535));
-  background-repeat: no-repeat;
-  background-size: 500px 600px;
+.HotelFeedback1{
+  margin-top: 50px;
+  margin-left: 60px;
+  grid-area: feedback1;
+  width: 600px;
+  height: 300px;
+}
+.HotelFeedback2{
+  margin-top: 50px;
+  grid-area: feedback2;
+  width: 600px;
+  height: 300px;
+}
+.HotelFeedback1 p{
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+.HotelFeedback2 p{
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+/*
+===============================
+//        Footer             //
+===============================
+*/
+.Footer{
+  background-color: rgb(27, 57, 114);
+  display: grid;
+  grid-area: Footer;
+  grid-template-areas:  
+  "email about privacy contactus"
+  ;
+}
+.empressa {
+  grid-area: email;
+  color: #fff;
+  background-color: #00FFFF;
 
 }
-.coluno2{
-  width: 445px;
-  height: 600px;
-  background-color: #F2F2F2;
-}
-.coluno3{
-  height: 600px;
-  width: 405px;
-  background-color: gold;
+.about{
+  display: grid;
+  grid-area: about;
+  display: grid;
+  grid-template-areas: 
+  "Service"
+  "About"
+  "Terms"
+  ;
+  background-color: #0bd51c;
 }
