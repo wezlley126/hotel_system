@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="MainMenu">
-        <img src="../images/Logo.jpeg" alt="">
+        <img src="../images/layout/20220409_093545_0000.png" alt="">
         <ul class="SubMenu">
           <li><a href="">Home</a></li>
           <li><a href="form_login.html">Quarto</a></li>
@@ -66,7 +66,7 @@
            <h3>Quarto Padrão</h3>
            <p>Quarto Padrão com direito a serviço de 
               limpeza, bar e burfer obtenha mais informações:</p>
-              <Button class="Alugar"><a href="">Alugar</a></Button>
+              <Button class="Alugar"><a href="quarto1.php">Alugar</a></Button>
         </div>
         <div class="room2">
            <img src="../quarto2.jpeg" alt="">
