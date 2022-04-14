@@ -23,8 +23,6 @@
         </div>
         <ul class="MenuDeBaixo">
             <li><a href="">Tire sua duvida</a></li>
-          <li><a href="form_login.html">Login</a></li>
-          <li><a href="form_registro.html">Registro</a></li>
           <li><a href="">Conta</a></li>
         </ul>
     </nav>
