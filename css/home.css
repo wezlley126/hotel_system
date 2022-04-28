@@ -12,7 +12,27 @@
    --CorDeServicoDeQuarto:  linear-gradient(to right, #0d0306, #260b12);
    --CorDeHedarQuartoPadrao: linear-gradient(to right, #a30f3bd5, #5d0a20);
    --CorDeFonteBranca: #D2D8D9;
-   
+   --CorDeFundoFuncionario: linear-gradient(to right, #141414, #080808, #0D0D0D);
+   --CorCristal1: #F2F2F2 ;
+   --CorCristal2: #D9D9D9;
+   --CorCristal3: #BFBFBF;
+   --CorCristal4: #8C8C8C;
+   --CorCristal5: #595959;
+   --CorOuro1: #F2C53D;
+   --CorOuro2: #F2D57E;
+   --CorOuro3: #D99C2B;
+   --CorOuro4: #A6691F;
+   --CorOuro5: #8C521F;
+   --CorVermelho: #5d0a20;
+   --GradientCristal: linear-gradient(to right, #F2F2F2, #D9D9D9, #BFBFBF);
+   --GradienteVermelhorEscuro:   linear-gradient(to right, #0d0306c5, #260B12);
+   --FontHurricane: 'Hurricane', cursive;
+   --FontQuicksand: 'Quicksand', cursive;
+   --GradienteCinza:   linear-gradient(to right,#D2D8D9, #BFB0A3);
+   --GradienteVermelhoEscuro2:  linear-gradient(to right, #0d0306, #260b12);
+   --GradienteRosaEscuro: linear-gradient(to right, #a30f3bd5, #5d0a20);
+   --CorBrancaClara: #D2D8D9;
+   --GradienteTriploEscuro: linear-gradient(to right, #141414, #080808, #0D0D0D);
  }
 /*
 ======================
@@ -186,11 +206,11 @@ Menu é layout do Menu principral
 /**/
 .MainMenu{
     background-image: url("../images/layout/Serviços/pexels-pixabay-164595.jpg");
-    background-size: 1365px 700px;
-    width: 1365px;
+    background-size: 100vw 700px;
+    width: 100vw;
     height: 700px;
     display: grid;
-    grid-template-columns: 200px 1165px ;
+    grid-template-columns: 200px 1150px ;
     grid-template-areas:  
     "Logo login"
     "titulo titulo"
@@ -204,15 +224,16 @@ Menu é layout do Menu principral
    grid-area: Logo;
 }
 .SubMenu{
-    margin-left: 816px;
+    margin-left: 806px;
     background-attachment: local;
     padding: 0;
     overflow: hidden;
     height: 80px;
-    width: 550px;
+    width: 520px;
     list-style-type: none;
     background-image:  var(--CorDeFundoMain);
-    position: fixed
+    position: fixed;
+    border-radius: 0px 0px 10px 10px;
 }
 .SubMenu li{
     float: right;
@@ -238,7 +259,7 @@ Menu é layout do Menu principral
     overflow: hidden;
     margin-top: 150px;
     height: 150px;
-    width: 1365px;
+    width: 100vw;
     list-style-type: none;
     background-image: linear-gradient(to right,#0d0306a0, #260B12);
     grid-area: quest;
@@ -285,14 +306,16 @@ Menu é layout do Menu principral
 Header
 */
 .Intro{ 
-    width: 1365px;
+    width: 100vw;
     height: 650px;
     font-size: 40px;
-    background-image: linear-gradient(to right,#D2D8D9, #BFB0A3);
+    background-color: var(--CorCristal1);
     display: grid;
     grid-template-areas:  
     "intro img"
     ;
+    border: 2px solid var(--CorCristal5);
+    padding-bottom: 20px;
 }
 .informa{
   font-weight: 100;
@@ -314,10 +337,10 @@ Header
 }
 .apresenta{
   background-image: url("../images/layout/cozinha.jpeg");
-  width: 700px;
+  width: 680px;
   height: 650px;
   background-repeat: no-repeat;
-  background-size:  700px 650px;
+  background-size:  690px 650px;
   grid-area: img;
   background-attachment: scroll;
   animation: trocar 15s infinite alternate;
@@ -342,125 +365,82 @@ itens deste grid
 ============================
 */
 .MainContent{
-    width: 1365px;
-    height: 750px;
-    background-image: linear-gradient(to right,#0d0306, #260B12);
-    display: grid;
-    grid-template-areas:
-    "Serviço"
-    "quarto";
+    width: 100vw;
+    height: 700px;
+    background-color: var(--CorCristal1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.Serviços{
-  margin-top: 20px;
-    grid-area: Serviço;
-    margin-left: 330px;
-    width: 700px;
-    height: 200px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-image: linear-gradient(to right,#D2D8D9, #BFB0A3);
-    grid-template-columns: 233px 233px 233px;
-    grid-template-areas:  
-      "titulo titulo titulo"
-      "serviço serviço serviço"
-      "infor infor infor";
-
+.room{
+  margin: auto;
+  width: 320px;
+  height: 450px;
+  border-radius: 0px 0px 10px 10px;
 }
-.Serviços h2{
-    margin-left: 30px;
-    text-align: center;
-    border-bottom: 2px solid black;
-    width: 400px;
-    font-family: 'Quicksand', sans-serif;
-    grid-area: titulo;
+.room img{
+  /*
+  border-radius: 10px 10px 0px 0px;*/
+  width: 320px;
+  height: 200px;
+  display: block;
 }
-.Serviços img{
-    margin-top: 30px;
-    width: 100px;
-    height: 100px;
-    border-radius: 40px;
-    background-color: #592722;
-    margin-left: 90px;
-    grid-area: serviço;
+.room div{
+  border-radius: 0px 0px 10px 10px;
+  width: 320px;
+  height: 200px;
 }
-.Serviços img:hover{
-    box-shadow: 4px 4px 10px #ffae00;
-    color: rgb(30, 100, 161);
+.room div h2{
+  font-family: var(--FontHurricane);
+  padding-top: 10px;
+  font-size: 28px;
 }
-.Serviços p{
-   grid-area: infor;    
+.room div h2::first-letter{
+  font-size: 28px;
+  border-top: 8px solid var(--CorVermelho);
 }
-.Quarto{
-    grid-area: quarto;
-    margin-left: 180px;
-    margin-top: 50px;
-    width: 1000px;
-    height: 420px;
-    background-image: linear-gradient(to right,#D2D8D9, #BFB0A3);
-    display: grid;
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "room1 room2 room3"
-    ;
-}
-.Quarto h2{
-    grid-area: titulo;
-    font-size: 26px;
-    padding-left: 50px;
-    font-family: var(--FontDeMenu);
-    text-shadow: 2px 2px 2px #260B12;
-}
-.room1{
-    padding-left: 40px;
-    width: 300px;
-    height: 320px;
-    grid-area: room1;
-    text-align: start;
-    font-family: var(--FontDeMenu);
-}
-.Quarto img{
-    margin-top: -20px;    
-    width: 280px;
-    height: 200px;
-    border-radius: 20px;
-}
-.room2{
-    width: 300px;
-    height: 320px;
-    grid-area: room2;
-    font-family: var(--FontDeMenu);
-}
-.room3{
-    width: 300px;
-    height: 320px;
-    grid-area: room3;
-    font-family: var(--FontDeMenu);
+.room div p{
+  font-family: var(--FontQuicksand);
+  font-size: 14px;
+  width: 200px;
 }
 .Alugar{
+    margin-left: 100px;
     width: 50px;
     height: 25px;
     background-image: linear-gradient(to right, #260B12, #592722);
-    border-radius: 20px;
+    border-radius: 10px;
 }
 .Alugar a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: var(--CorCristal2);
 }  
+.room:hover{
+  border-radius: 100px 0px 100px 0px;
+  border: 2px inset solid var(--CorCristal5);
+  box-shadow: 20px 20px 20px black;
+}
+.room:hover img{
+  border-radius: 100px 0px 0px 0px;
+}
+/*
+
+*/
 .FooterConter{
-     width: 1365px;
+     width: 100vw;
      height: 300px;
-     background-image: var(--CorDeFundoDeQuarto);
-     grid-template-columns: 365px 500px 500px;
+     background-image: var(--CorDeServicoDeQuarto);
+     grid-template-columns: 365px 490px 490px;
      display: grid;
      grid-template-areas:  
      "software sobre redes"
      ;
+     color: var(--CorCristal2);
 }
 .software{
   width: 365px;
   height: 300px;
   grid-area: software;
-  border-right: 2px solid #260B12;
 }
 .software img{
   margin-left: 125px;
@@ -485,7 +465,6 @@ itens deste grid
   width: 500px;
   height: 300px;
   grid-area: sobre;
-  border-right: 2px solid #260B12;
 }
 .abouts ul{
   margin-left: 100px;
@@ -500,7 +479,7 @@ itens deste grid
 .abouts ul li a{
     font-size: 18px;
     text-decoration: none;
-    color: #260B12;
+    color: var(--CorCristal3);
 }
 .redes{
   grid-area: redes;
@@ -525,7 +504,186 @@ itens deste grid
   font-size: 18px;
 }
 /*
-Css do Quarto Padrão
+===============================
+@Media Screen 
+===============================
+*/
+@media only screen and (min-width: 800px) and (max-width: 1350px){
+  .MainMenu{
+    background-image: url("../images/layout/Serviços/pexels-pixabay-164595.jpg");
+    background-size: 100vw 700px;
+    width: 100vw;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 200px 1150px ;
+    grid-template-areas:  
+    "Logo login"
+    "titulo titulo"
+    "quest quest"
+    ;
+}
+.MainMenu img{
+   width: 200px;
+   height: 200px;
+}
+.SubMenu{
+    margin-left: 506px;
+}
+.SubMenu li{
+    float: right;
+}
+
+/*
+
+*/
+.MenuDeBaixo{
+    margin-top: 150px;
+    height: 150px;
+}
+
+/*
+
+*/
+.BoaVindas{
+    margin-left: 250px;
+}
+.BoaVindas h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: #592722;
+    font-family: var(--FontDeMenu);
+}
+.BoaVindas h2{
+    color: #D2D8D9;
+    text-align: center;
+    font-size: 60px;
+    font-family: var(--FontDeMenu);
+}
+/*
+
+*/
+
+.Intro{ 
+  width: 100vw;
+  height: 650px;
+  font-size: 40px;
+  border: none;
+}
+.informa{
+font-weight: 100;
+width: 565px;
+}
+.informa p{
+margin-left: 50px;
+}
+.informa h2{
+margin-top: 50px;
+width: 200px;
+margin-left: 50px;
+}
+.apresenta{
+width: 490px;
+height: 650px;
+background-repeat: no-repeat;
+background-size:  490px 650px;
+}
+@keyframes  trocar{
+0%{
+  background-image: url("../images/layout/Serviços/cozinha.jpeg");
+}
+50%{
+  background-image: url("../images/layout/Serviços/Funcionario.jpeg");
+}
+100%{
+  background-image: url("../images/layout/Serviços/pexels-pixabay-164595.jpg");
+}
+}
+/*
+
+*/
+.FooterConter{
+  width: 100vw;
+  height: 300px;
+  background-image: var(--CorDeServicoDeQuarto);
+  grid-template-columns: 265px 390px 290px;
+  display: grid;
+  grid-template-areas:  
+  "software sobre redes"
+  ;
+  color: var(--CorCristal2);
+}
+.software{
+width: 365px;
+height: 300px;
+grid-area: software;
+}
+.software img{
+margin-left: 125px;
+margin-top: 20px;
+width: 100px;
+height: 100px;
+border-radius: 50px;
+}
+.software h2{
+margin-left: 80px;
+width: 200px;
+font-family: var(--FontDeMenu);
+font-size: 18px;
+}
+.software p{
+margin-left: 80px;
+width: 250px;
+font-family: var(--FontDeMenu);
+font-size: 14px;
+}
+.abouts{
+width: 500px;
+height: 300px;
+grid-area: sobre;
+}
+.abouts ul{
+margin-left: 100px;
+margin-top: 80px;
+list-style-type: none;
+width: 300px;
+}
+.abouts ul li{
+  width: 150px;
+  padding-bottom: 30px;
+}
+.abouts ul li a{
+ font-size: 18px;
+ text-decoration: none;
+ color: var(--CorCristal3);
+}
+.redes{
+grid-area: redes;
+width: 500px;
+height: 300px;
+}
+.redes h2{
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
+.redes ul{
+list-style: none;
+width: 300px;
+}
+.redes ul li{
+display: inline;
+}
+.redes p{
+margin-top: 150px;
+margin-left: 160px;
+font-family: var(--FontDeText);
+font-size: 18px;
+}
+}
+/*
+
 */
 .LayoutDoQuartoPadrao{
   width: 1350px;
@@ -710,4 +868,73 @@ section#ConteudoDoQuartoPadrao{
   color: #260B12;
   text-align: center;
 }
-/**/
+/*
+==========================
+/Conetudo Da Pagina de 
+/Funcionarios
+/Atection This areas is 
+/Relatived for Css 
+/Service Main Pga
+=========================
+*/
+.LayoutDaPaginaFuncionarios{
+  width: 1350px;
+  height: 3000px;
+  background-image: var(--CorDeHedarQuartoPadrao);
+  display: grid;
+  grid-template-columns: 1350px;
+  grid-template-areas:  
+  "Serviços" 
+  "ServicoBurfer" 
+  "ServicoDeBar"
+  "ServicoDeLimpeza"
+  "ServicoDeQuarto"
+}
+.ServiçoGerais{
+  width: 1350px;
+  height: 500px;
+  background-image: var(--CorDeHedarQuartoPadrao);
+}
+.Limpeza{
+  width: 342.5px;
+  height: 500px;
+  background-image: url(../images/ServiçosGerais/pexels-andrea-piacquadio-3770102.jpg);
+  background-repeat: no-repeat;
+  background-size: 342.5px 500px;
+  display: inline-block;
+}
+.quarto{
+  margin-left: -4px;
+  width: 342.5px;
+  height: 500px;
+  background-image: url(../images/ServiçosGerais/pexels-cottonbro-6466212.jpg);
+  background-repeat: no-repeat;
+  background-size: 342.5px 500px;
+  display: inline-block;
+}
+.Burfer{
+  margin-left: -4px;
+  width: 340px;
+  height: 500px;
+  background-image: url(../images/ServiçosGerais/pexels-george-desipris-965703.jpg);
+  background-repeat: no-repeat;
+  background-size: 340px 500px;
+  display: inline-block;
+}
+.Bar{
+  margin-left: -4px;
+  width: 324px;
+  height: 500px;
+  background-image: url(../images/ServiçosGerais/pexels-juan-c-palacios-3438708.jpg);
+  background-repeat: no-repeat;
+  background-size: 340px 500px;
+  display: inline-block;
+}
+.ServiçoDeBurfer{
+  margin-top: 200px;
+  width: 1350px; 
+  height: 600px;
+  grid-area: ServicoBurfer;
+  display: inline-block;
+  padding-bottom: 50px;
+}

@@ -26,11 +26,46 @@
           <li><a href="">Conta</a></li>
         </ul>
     </nav>
+    <main class="MainContent">
+          <article class="room">
+              <img src="../images/quartos/quarto1.jpeg" alt="">
+              <div>
+                <h2>Quarto Padrão R$200</h2>
+                <p>Nosso quarto padrão possuir serviços basicos, tais como 
+                   Serviço de limpeza, Serviço de Quarto Especializado, além 
+                   de serviço especializado de burfer, isso tudo para nossos clientes.
+                </p>
+                <button class="Alugar"><a href="quarto1.php">Alugar</a></button>
+              </div>
+          </article>
+          <article class="room">
+             <img src="../images/quartos/quarto2.jpeg" alt="">
+              <div>
+              <h2>Quarto Premium R$250</h2>
+                <p>Nossos Quarto Premium oferecer todos os serviços basicos de nossos 
+                   serviço, tendo como exclusividade atendimento de uma equipe especializado,
+                   somente para clientes vip. 
+                </p>
+                <button class="Alugar"><a href="">Alugar</a></button>
+              </div>
+          </article>
+          <article class="room">
+              <img src="../images/quartos/quarto3.jpeg" alt="">
+              <div>
+              <h2>Quarto Vip R$300</h2>
+                <p>Quarto Vip, todos os serviço disponiveis juntamente com serviços adicionais 
+                  como sala de jogos vip, bar exclsusivo de clientes vip, 
+                  além de sorteios e como viagem e cumpons para restaurantes. 
+                </p>
+                <button class="Alugar"><a href="">Alugar</a></button>
+              </div>
+          </article>
+    </main>
     <header class="Intro">
       <div class="Logo">
 
       </div>
-      <div class="informa">
+      <section class="informa">
         <h2>Por quê o melhor para Melhor?</h2>
          <p>Nós somos a Horizont Hotel e estamos preocupado em entregar os melhores serviço de quarto,
            nosso principral objetivo em que nossa hospedagem sejam superior ao valor gastou por nossos         
@@ -43,49 +78,11 @@
              com o objetivo de ajudar a otimizar o trabalhor dos funcionario da Horizont Hotel, para melhora mais
              ainda o serviço, sendo agora o hotel 5 estrelas e além de se um dos <strong>Top 3 melhores Hotel do Nordeste</strong> 
           </p>
-      </div>
+     </section>
       <div class="apresenta">
 
       </div>
     </header>
-    <main class="MainContent">
-      <div class="Serviços">
-        <h2>Serviços</h2>
-        <a href="servico.html">
-         <img src="../images/inforextra/icons8-food-bar-100.png" alt="">
-         <img src="../images/inforextra/icons8-falar-em-público-90.png" alt="">
-         <img src="../images/inforextra/icons8-comida-fast-food-street-food-18-100.png" alt="">
-        </a>
-      </div>
-      <div class="Quarto">
-        <h2>Seleção de quartos:</h2>
-        <div class="room1">
-           <img src="../quarto1.jpeg" alt="">
-           <h3>Quarto Padrão</h3>
-           <p>Quarto Padrão com direito a serviço de 
-              limpeza, bar e burfer obtenha mais informações:</p>
-              <Button class="Alugar"><a href="quarto1.php">Alugar</a></Button>
-        </div>
-        <div class="room2">
-           <img src="../quarto2.jpeg" alt="">
-           <h3>Quarto Vip</h3>
-           <p>Quarto Vip é para pessoas que querem mais do que uma 
-             noite é para que que uma noite extraodinaria com nossos 
-             serviço
-           </p>
-           <Button class="Alugar"><a href="">Alugar</a></Button>
-        </div>
-        <div class="room3">
-           <img src="../quarto3.jpeg" alt="">
-           <h3>Quarto Premium</h3>
-           <p>Quarto Premium por que não o melhor para o melhor?, com 
-             acesso total a serviços do hotel mais bonûs que nosso hotel 
-             poder oferecer a você:
-           </p>
-           <Button class="Alugar"><a href="">Alugar</a></Button>
-        </div> 
-     </div>
-    </main>
    <footer class="FooterConter">
       <div class="software">
         <img src="../images/layout/logo/SoftwareEstresse.jpeg" alt="">
