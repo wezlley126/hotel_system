@@ -9,23 +9,6 @@
     <title>Horizont Hotel</title>
 </head>
 <body>
-    <nav class="MainMenu">
-        <img src="../images/layout/20220409_093545_0000.png" alt="">
-        <ul class="SubMenu">
-          <li><a href="">Home</a></li>
-          <li><a href="form_login.html">Quarto</a></li>
-          <li><a href="">Contato</a></li>
-          <li class=""><a href="">Novidade</a></li>
-        </ul>
-        <div class="BoaVindas">
-            <h1>O Melhor para o Melhor</h1>
-            <h2>Bem vindo ao Horizont Hotel</h2>
-        </div>
-        <ul class="MenuDeBaixo">
-            <li><a href="">Tire sua duvida</a></li>
-          <li><a href="">Conta</a></li>
-        </ul>
-    </nav>
     <main class="MainContent">
           <article class="room">
               <img src="../images/quartos/quarto1.jpeg" alt="">
@@ -61,28 +44,6 @@
               </div>
           </article>
     </main>
-    <header class="Intro">
-      <div class="Logo">
-
-      </div>
-      <section class="informa">
-        <h2>Por quê o melhor para Melhor?</h2>
-         <p>Nós somos a Horizont Hotel e estamos preocupado em entregar os melhores serviço de quarto,
-           nosso principral objetivo em que nossa hospedagem sejam superior ao valor gastou por nossos         
-           clientes, afinal um cliente mais do que sastifeito e um cliente que nos procura em um futuro proximo 
-           e compartilhar as sua experiencia em nosso Hotel, não somos nada ser nossos clientes.
-                                                      by Grupo Horizont Hotel.
-          </p>  
-          <h2>Um pouco sobre Horizont hotel</h2>
-          <p>Fundando em 2022 pelo grupo Software do Estresse um pequeno grupo de estudante de uma eeep do Ceará,
-             com o objetivo de ajudar a otimizar o trabalhor dos funcionario da Horizont Hotel, para melhora mais
-             ainda o serviço, sendo agora o hotel 5 estrelas e além de se um dos <strong>Top 3 melhores Hotel do Nordeste</strong> 
-          </p>
-     </section>
-      <div class="apresenta">
-
-      </div>
-    </header>
    <footer class="FooterConter">
       <div class="software">
         <img src="../images/layout/logo/SoftwareEstresse.jpeg" alt="">

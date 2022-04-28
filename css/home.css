@@ -5,7 +5,7 @@
  */
  @charset "UTF-8";
  :root{
-   --CorDeFundoMain:   linear-gradient(to right, #0d0306c5, #260B12);
+   --LinearGradientEscurp:   linear-gradient(to right, #0d0306c5, #260B12);
    --FontDeText: 'Hurricane', cursive;
    --FontDeMenu: 'Quicksand', cursive;
    --CorDeFundoDeQuarto:   linear-gradient(to right,#D2D8D9, #BFB0A3);
@@ -30,9 +30,17 @@
    --FontQuicksand: 'Quicksand', cursive;
    --GradienteCinza:   linear-gradient(to right,#D2D8D9, #BFB0A3);
    --GradienteVermelhoEscuro2:  linear-gradient(to right, #0d0306, #260b12);
-   --GradienteRosaEscuro: linear-gradient(to right, #a30f3bd5, #5d0a20);
+   --GradienteRosaEscuro: linear-gradient(to right, #a30f3b, #5d0a20);
+   --GradienteRosaEscuro2: linear-gradient(to right, #a30f3b2b, #5d0a203c);
    --CorBrancaClara: #D2D8D9;
    --GradienteTriploEscuro: linear-gradient(to right, #141414, #080808, #0D0D0D);
+   --FontSizeGrande: 50px;
+   --FontSizeMedium: 24px;
+   --FontSizePequeno: 20px;
+   --FontSizeExtraPequena: 17px;
+ }
+ body{
+   overflow-x: hidden;
  }
 /*
 ======================
@@ -204,157 +212,73 @@ Menu é layout do Menu principral
 */
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
 /**/
-.MainMenu{
-    background-image: url("../images/layout/Serviços/pexels-pixabay-164595.jpg");
-    background-size: 100vw 700px;
-    width: 100vw;
-    height: 700px;
-    display: grid;
-    grid-template-columns: 200px 1150px ;
-    grid-template-areas:  
-    "Logo login"
-    "titulo titulo"
-    "quest quest"
-    ;
+.MenuPrincipal{
+  display: inline-flex;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background-color: var(--CorVermelho);
 }
-.MainMenu img{
-   width: 200px;
-   height: 200px;
-   display: inline;
-   grid-area: Logo;
+.LogoDoSite{
+  margin-left: 25px;
+  list-style: none;
+  width: 100px;
+  height: 80px;
 }
-.SubMenu{
-    margin-left: 806px;
-    background-attachment: local;
-    padding: 0;
-    overflow: hidden;
-    height: 80px;
-    width: 520px;
-    list-style-type: none;
-    background-image:  var(--CorDeFundoMain);
-    position: fixed;
-    border-radius: 0px 0px 10px 10px;
+.LogoDoSite img{
+  width: 100px;
+  height: 100px;
 }
-.SubMenu li{
-    float: right;
+.Navegacao{
+  padding-top: 25px;
+  width: 500px;
 }
-.SubMenu li a{
-    font-family: var(--FontDeText);
-    display: block;
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    padding: 24px 24px;
-    text-decoration: none;
+.Navegacao li{
+  display: inline;
+  padding: 20px;
 }
-.SubMenu li a:hover{
-    text-shadow: 4px 4px 10px #FF0000;
-    color: rgb(30, 100, 161);
+.Navegacao li a{
+  text-decoration: none;
+  font-size: var(--FontSizeExtraPequena);
+  font-family: var(--FontQuicksand);
+  color: var(--CorBrancaClara);
 }
-/*
-
-*/
-.MenuDeBaixo{
-    padding: 0;
-    overflow: hidden;
-    margin-top: 150px;
-    height: 150px;
-    width: 100vw;
-    list-style-type: none;
-    background-image: linear-gradient(to right,#0d0306a0, #260B12);
-    grid-area: quest;
+.Contantos{
+  padding-top: 15px;
+  display: inline;
+  list-style: none;
+  width: 500px;
+  height: 80px;
+  text-align: center;
 }
-.MenuDeBaixo li{
-    float: right;
-}.MenuDeBaixo li a{
-    font-size: 30px;
-    font-family: var(--FontDeText);
-    display: block;
-    color: #D2D8D9;
-    text-align: center;
-    padding: 80px 80px;
-    text-decoration: none;
+.Contantos li{
+  padding-left: 10px;
+  display: inline;
 }
-.MenuDeBaixo li a:hover{
-    text-shadow: 4px 4px 10px #FF0000;
-    color: rgb(30, 100, 161);
+.Contantos img{
+  width: 40px;
+  height: 40px;
+  display: inline;
 }
-/*
-
-*/
-.BoaVindas{
-    margin-left: 400px;
-    width: 600px;
-    height: 200px;
-    grid-area: titulo;
+.BemVindo{
+  background: url("../images/layout/Serviços/pexels-pixabay-164595.jpg") no-repeat;
+  background-size: 100% 700px;
+  width: 100%;
+  height: 700px;
+  display: flex;
 }
-.BoaVindas h1{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 40px;
-    color: #592722;
-    font-family: var(--FontDeMenu);
+.BemVindo div{
+  margin-top: 200px;
+  margin-left: 300px;
+  width: 800px;
+  height: 300px;
+  background-color: var(--CorBrancaClara);
 }
-.BoaVindas h2{
-    color: #D2D8D9;
-    text-align: center;
-    font-size: 60px;
-    font-family: var(--FontDeMenu);
-}
-/*
-Header
-*/
-.Intro{ 
-    width: 100vw;
-    height: 650px;
-    font-size: 40px;
-    background-color: var(--CorCristal1);
-    display: grid;
-    grid-template-areas:  
-    "intro img"
-    ;
-    border: 2px solid var(--CorCristal5);
-    padding-bottom: 20px;
-}
-.informa{
-  font-weight: 100;
-  font-family: var(--FontDeMenu);
-  font-size: 15px;
-  text-align: start;
-  color: rgb(0, 0, 0);
-  grid-area: intro;
-  width: 665px;
-}
-.informa p{
-  width: 400px;
-  margin-left: 100px;
-}
-.informa h2{
-  margin-top: 50px;
-  width: 200px;
-  margin-left: 100px;
-}
-.apresenta{
-  background-image: url("../images/layout/cozinha.jpeg");
-  width: 680px;
-  height: 650px;
-  background-repeat: no-repeat;
-  background-size:  690px 650px;
-  grid-area: img;
-  background-attachment: scroll;
-  animation: trocar 15s infinite alternate;
-}
-@keyframes  trocar{
-  0%{
-    background-image: url("../images/layout/Serviços/cozinha.jpeg");
-  }
-  50%{
-    background-image: url("../images/layout/Serviços/Funcionario.jpeg");
-  }
-  100%{
-    background-image: url("../images/layout/Serviços/pexels-pixabay-164595.jpg");
-  }
+.BemVindo h1{
+  width: 800px;
+  font-family: var(--FontQuicksand);
+  font-size: var(--FontSizeGrande);
+  color: var(--CorCristal5);
 }
 /*
 ============================
@@ -418,7 +342,7 @@ itens deste grid
 .room:hover{
   border-radius: 100px 0px 100px 0px;
   border: 2px inset solid var(--CorCristal5);
-  box-shadow: 20px 20px 20px black;
+  box-shadow: 2px 2px 2px black;
 }
 .room:hover img{
   border-radius: 100px 0px 0px 0px;
@@ -508,182 +432,10 @@ itens deste grid
 @Media Screen 
 ===============================
 */
-@media only screen and (min-width: 800px) and (max-width: 1350px){
-  .MainMenu{
-    background-image: url("../images/layout/Serviços/pexels-pixabay-164595.jpg");
-    background-size: 100vw 700px;
-    width: 100vw;
-    height: 700px;
-    display: grid;
-    grid-template-columns: 200px 1150px ;
-    grid-template-areas:  
-    "Logo login"
-    "titulo titulo"
-    "quest quest"
-    ;
-}
-.MainMenu img{
-   width: 200px;
-   height: 200px;
-}
-.SubMenu{
-    margin-left: 506px;
-}
-.SubMenu li{
-    float: right;
-}
-
 /*
-
-*/
-.MenuDeBaixo{
-    margin-top: 150px;
-    height: 150px;
-}
-
-/*
-
-*/
-.BoaVindas{
-    margin-left: 250px;
-}
-.BoaVindas h1{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 40px;
-    color: #592722;
-    font-family: var(--FontDeMenu);
-}
-.BoaVindas h2{
-    color: #D2D8D9;
-    text-align: center;
-    font-size: 60px;
-    font-family: var(--FontDeMenu);
-}
-/*
-
-*/
-
-.Intro{ 
-  width: 100vw;
-  height: 650px;
-  font-size: 40px;
-  border: none;
-}
-.informa{
-font-weight: 100;
-width: 565px;
-}
-.informa p{
-margin-left: 50px;
-}
-.informa h2{
-margin-top: 50px;
-width: 200px;
-margin-left: 50px;
-}
-.apresenta{
-width: 490px;
-height: 650px;
-background-repeat: no-repeat;
-background-size:  490px 650px;
-}
-@keyframes  trocar{
-0%{
-  background-image: url("../images/layout/Serviços/cozinha.jpeg");
-}
-50%{
-  background-image: url("../images/layout/Serviços/Funcionario.jpeg");
-}
-100%{
-  background-image: url("../images/layout/Serviços/pexels-pixabay-164595.jpg");
-}
-}
-/*
-
-*/
-.FooterConter{
-  width: 100vw;
-  height: 300px;
-  background-image: var(--CorDeServicoDeQuarto);
-  grid-template-columns: 265px 390px 290px;
-  display: grid;
-  grid-template-areas:  
-  "software sobre redes"
-  ;
-  color: var(--CorCristal2);
-}
-.software{
-width: 365px;
-height: 300px;
-grid-area: software;
-}
-.software img{
-margin-left: 125px;
-margin-top: 20px;
-width: 100px;
-height: 100px;
-border-radius: 50px;
-}
-.software h2{
-margin-left: 80px;
-width: 200px;
-font-family: var(--FontDeMenu);
-font-size: 18px;
-}
-.software p{
-margin-left: 80px;
-width: 250px;
-font-family: var(--FontDeMenu);
-font-size: 14px;
-}
-.abouts{
-width: 500px;
-height: 300px;
-grid-area: sobre;
-}
-.abouts ul{
-margin-left: 100px;
-margin-top: 80px;
-list-style-type: none;
-width: 300px;
-}
-.abouts ul li{
-  width: 150px;
-  padding-bottom: 30px;
-}
-.abouts ul li a{
- font-size: 18px;
- text-decoration: none;
- color: var(--CorCristal3);
-}
-.redes{
-grid-area: redes;
-width: 500px;
-height: 300px;
-}
-.redes h2{
-  font-size: 20px;
-  margin-top: 30px;
-  text-align: center;
-}
-.redes ul{
-list-style: none;
-width: 300px;
-}
-.redes ul li{
-display: inline;
-}
-.redes p{
-margin-top: 150px;
-margin-left: 160px;
-font-family: var(--FontDeText);
-font-size: 18px;
-}
-}
-/*
-
+==============================
+/Quartos/
+==============================
 */
 .LayoutDoQuartoPadrao{
   width: 1350px;
