@@ -406,6 +406,8 @@ itens deste grid
   display: flex;
   flex-direction: row;
   height: 400px;
+  flex-wrap: wrap;
+  flex-grow: 20px;
 }
 .Servico{
   margin-bottom: 4px;
@@ -414,9 +416,10 @@ itens deste grid
   height: 400px;
 }
 .Servico div{
+  margin-bottom: 20px;
   margin-top: 320px;
   padding: 0px 0px 20px 0px;
-  height: 80px;
+  height: 60px;
   width: 440px;
   background-image: var(--LinearGradientEscurp);
   background-repeat: no-repeat;
@@ -541,259 +544,73 @@ itens deste grid
 */
 /*
 ==============================
-/Quartos/
+/Seleçao de Conta 
+Secleted for Cont/
 ==============================
 */
-.LayoutDoQuartoPadrao{
-  width: 1350px;
-  height: 1360px;
-}
-/*
-*/
-.ImagesDeApresentaçãoDoQuartoPadrao{
-  background-image: url("../images/quartos/quarto1/pexels-photo-271619.jpeg");
-  width: 1350px;
-  height: 700px;
+#MainSelectionCont{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/layout/Serviços/pexels-pixabay-164595.jpg");
+  background-size: 100vw 100vh;
   background-repeat: no-repeat;
-  background-size: 1350px 700px;
-  animation: trocarQuartoPadrao 15s infinite alternate;
 }
-.voltar{
-  padding-top: 60px;
-  display: inline-block;
-  margin-left: 1250px;
-  background-color: #000000b4;
-  width: 100px;
-  height: 500px;
-}
-.voltar > img{
-  margin-top: 170px;
-  border-radius: 50px;
-  background-color: #fff;
-  width: 100px;
-  height: 100px;
-}
-.ir{
-  margin-top: -600px;
-  display: inline-block;
-  background-color: #000000b4;
-  width: 50px;
-  height: 500px;
-}
-@keyframes  trocarQuartoPadrao{
-  0%{
-    background-image: url("../images/quartos/quarto1/pexels-photo-271639.webp");
-  }
-  50%{
-    background-image: url("../images/quartos/quarto1/pexels-photo-271624.webp")
-  }
-  100%{
-    background-image: url("../images/quartos/quarto1/pexels-photo-271619.jpeg");
-  }
-}
-section#ConteudoDoQuartoPadrao{
-  width: 1350px;
-  height: 700px;  
-  display: grid;
-  grid-template-columns: 900px 450px;
-  background-image: var(--CorDeServicoDeQuarto);
-  grid-template-areas: 
-  "ServiçoDoQuarto QuartosDisponiveis"
-  ;
-}
-#InformaçõesDoServicoQuartoPadrao{
-  padding-top: 20px;
-  grid-area: ServiçoDoQuarto;
-  padding-left: 40px;
-}
-.InforHover{
-  margin-top: 30px;
-  margin-left: 170px;
-  width: 150px;
-  height: 150px;
-  border-radius: 75px;
-  background-image: var(--CorDeServicoDeQuarto);
-  background-repeat: no-repeat;
-  background-size: 150px 150px;
-}
-.InforHover img{
-  position: absolute;
-  margin-top: 25px;
-  margin-left: 25px;
-  border-radius: 40px;
-  background-image: var(--CorDeFundoDeQuarto);
-  width: 100px;
-  height: 100px;
-}
-.ListagemDeQuarto{
-  columns: 2;
-  column-gap: 140px;
-  padding-top: 50px;
-  margin-top: -120px;
-  width: 410px;
-  height: 500px;
-  background-image: var(--CorDeServicoDeQuarto);
-}
-.ListagemDeQuarto li{
-  list-style: inside;
-  list-style-type: none;
-  width: 120px;
-  height: 95px;
-  background-image: var(--CorDeFundoDeQuarto);
-  text-align: center;
-  font-family: var(--FontDeMenu);
-}
-.alugar{
-  margin-top: 40px;
-  width: 100px;
-  border-radius: 5px 5px 5px 5px;
-  height: 20px;
-  background-color: #5d0a20;
-  text-decoration: none;
-  color: var(--CorDeFonteBranca);
-}
-.ServiçoDeQuarto{
-  position: relative;
-  display: inline-block;
-  width: 400px;
-  height: 400px;
-  background-image: var(--CorDeFundoDeQuarto);
-  border-radius: 0px 0px 10px 10px;
-}
-.ServiçoDeQuarto header{
-  position: absolute;
-  color: var(--CorDeFonteBranca);
-  font-family: var(--FontDeText);
-  font-size: medium;
-  text-align: center;
-  width: 400px;
-  height: 50px;
-  background-image: var(--CorDeHedarQuartoPadrao);
-}
-.ServiçoDeQuarto div{
-  margin-top: 50px;
-  width: 400px;
-  height: 350px;
-  position: absolute;
-  padding-left: 60px;
-  padding-top: 20px;
-}
-.ServiçoDeQuarto div > p{
-  width: 250px;
-  line-height: 1.5em;
-  font-weight: 100;
-  font-size: 18px;
-  font-family: var(--FontDeMenu);
-}
-#InformaçoesDoQuartoPadrao{
-  border-radius: 0px 0px 10px 10px;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.207);
+#LayoutCont{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+  margin-left: 20vw;
   margin-top: 20px;
-  display: inline-block;
-  width: 805px;
-  height: 200px;
-  background-image: var(--CorDeFundoDeQuarto);
-}
-#InformaçoesDoQuartoPadrao header{
-    width: 805px;
-    height: 30px;
-    font-size: medium;
-    text-align: center;
-    font-family: var(--FontDeMenu);
-    background-image: var(--CorDeHedarQuartoPadrao);
-    color: var(--CorDeFonteBranca);
-}
-#InformaçoesDoQuartoPadrao p{
-  line-height: 1.2em;
-  margin-left: 50px;
-  margin-top: 50px;
-  font-family: var(--FontDeMenu);
-  width: 700px;
-}
-#InformaçoesDeQuarto1Disponivel{
-  margin-top: 20px;
-  border-radius: 10px 0px 0px 10px;
-  grid-area: QuartosDisponiveis;
-  background-image: var(--CorDeFundoDeQuarto);
-  height: 620px;
-}
-.FooterQuartoPadrao{
-  width: 1350px;
-  height: 50px;
-  background-image: var(--CorDeFundoDeQuarto);
-  padding-top: 20px;
-}
-.FooterQuartoPadrao > p{
-  color: #260B12;
-  text-align: center;
-}
-/*
-==========================
-/Conetudo Da Pagina de 
-/Funcionarios
-/Atection This areas is 
-/Relatived for Css 
-/Service Main Pga
-=========================
-*/
-.LayoutDaPaginaFuncionarios{
-  width: 1350px;
-  height: 3000px;
-  background-image: var(--CorDeHedarQuartoPadrao);
-  display: grid;
-  grid-template-columns: 1350px;
-  grid-template-areas:  
-  "Serviços" 
-  "ServicoBurfer" 
-  "ServicoDeBar"
-  "ServicoDeLimpeza"
-  "ServicoDeQuarto"
-}
-.ServiçoGerais{
-  width: 1350px;
-  height: 500px;
-  background-image: var(--CorDeHedarQuartoPadrao);
-}
-.Limpeza{
-  width: 342.5px;
-  height: 500px;
-  background-image: url(../images/ServiçosGerais/pexels-andrea-piacquadio-3770102.jpg);
-  background-repeat: no-repeat;
-  background-size: 342.5px 500px;
-  display: inline-block;
-}
-.quarto{
-  margin-left: -4px;
-  width: 342.5px;
-  height: 500px;
-  background-image: url(../images/ServiçosGerais/pexels-cottonbro-6466212.jpg);
-  background-repeat: no-repeat;
-  background-size: 342.5px 500px;
-  display: inline-block;
-}
-.Burfer{
-  margin-left: -4px;
-  width: 340px;
-  height: 500px;
-  background-image: url(../images/ServiçosGerais/pexels-george-desipris-965703.jpg);
-  background-repeat: no-repeat;
-  background-size: 340px 500px;
-  display: inline-block;
-}
-.Bar{
-  margin-left: -4px;
-  width: 324px;
-  height: 500px;
-  background-image: url(../images/ServiçosGerais/pexels-juan-c-palacios-3438708.jpg);
-  background-repeat: no-repeat;
-  background-size: 340px 500px;
-  display: inline-block;
-}
-.ServiçoDeBurfer{
-  margin-top: 200px;
-  width: 1350px; 
+  width: 800px;
   height: 600px;
-  grid-area: ServicoBurfer;
-  display: inline-block;
-  padding-bottom: 50px;
+}
+#ContaAdm{
+  display: inline-flex;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-image: var(--GradienteRosaEscuro);
+  transform: rotateZ(45deg);
+}
+#ContaCliente{
+  display: inline-flex;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-image: var(--GradienteCinza);
+  transform: rotateZ(45deg);
+}
+#ContaAdm div{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  transform: rotateZ(-45deg);
+  background-color: var(--CorCristal2);
+}
+#ContaCliente div{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 200px;
+  transform: rotateZ(-45deg);
+  background-color: var(--CorCristal2);
+}
+#ContaCliente:hover  div{
+    border-radius: 100px;
+}
+#ContaCliente:hover{
+  border-radius: 100px;
+}
+#ContaAdm:hover{
+  border-radius: 100px;
+}
+#ContaAdm:hover div{
+  border-radius: 100px;
 }
