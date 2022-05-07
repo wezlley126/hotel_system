@@ -585,32 +585,55 @@ Secleted for Cont/
   transform: rotateZ(45deg);
 }
 #ContaAdm div{
+  display: flex;
   position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   top: 50px;
   left: 50px;
   width: 200px;
   height: 200px;
   transform: rotateZ(-45deg);
-  background-color: var(--CorCristal2);
+  font-size: var(--FontSizeMedium);
+  text-transform: uppercase;
 }
 #ContaCliente div{
+  display: flex;
   position: absolute;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   top: 50px;
   left: 50px;
   width: 200px;
   height: 200px;
   transform: rotateZ(-45deg);
-  background-color: var(--CorCristal2);
-}
-#ContaCliente:hover  div{
-    border-radius: 100px;
+  font-size: var(--FontSizeMedium);
+  text-transform: uppercase;
 }
 #ContaCliente:hover{
+    border-radius: 100px;  
+    box-shadow: 5px 5px 5px black;
+    animation: spinner 1.5s;
+}
+#ContaCliente:hover div{
   border-radius: 100px;
+  background-color: var(--CorCristal2);
+  box-shadow: 5px 5px 5px black;
 }
 #ContaAdm:hover{
   border-radius: 100px;
+  box-shadow: 5px 5px 5px black;
+  animation: spinner 1.5s;
 }
 #ContaAdm:hover div{
   border-radius: 100px;
+  box-shadow: 5px 5px 5px black;
+  background-color: var(--CorCristal2);
+}
+@keyframes spinner {
+  100%{
+    transform: rotate(418deg);
+  }
 }
