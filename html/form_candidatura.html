@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Candidatura a vaga</title>
+    <link rel="stylesheet" href="../css/form_candidatura.css">
+  </head>
+  <body>
+    Caso queira você pode nós enviar seu curriculo para candidatura a uma vaga de emprego.<br/>
+    Vagas disponiveis:
+    <form class="" action="../php/candidatura.php" method="post" enctype="multipart/form-data">
+
+      <label>Nome do candidato</label>
+      <input type="text" name="nome" value="" required>
+
+      <br/>
+      <label>Sobrenome do candidato</label>
+      <input type="text" name="sobrenome" value="" required>
+
+      <br/>
+      <label><b>Vaga(s) desejada(s)</b></label>
+
+      <br/>
+      <input type="checkbox" name="" value="">
+      <label>Cozinheiro</label>
+      <input type="checkbox" name="" value="">
+      <label>Gerente de hotel</label>
+      <input type="checkbox" name="" value="">
+      <label>Recepcionista</label>
+      <input type="checkbox" name="" value="">
+      <label>Faxineiro</label>
+      <input type="checkbox" name="" value="">
+      <label>Serviço de quarto</label>
+
+      <br/>
+      <label>CPF(opcional)</label>
+      <input type="number" name="CPF" value="">
+
+      <br/>
+      <label>Curriculo do candidato</label>
+      <input type="file" name="curriculo" value="" required>
+
+      <input type="submit" name="enviar" value="Enviar">
+
+    </form>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+  </head>
+  <body class="form">
+      <form class="log" action="../php/criar_user.php" method="post">
+      <h1>Horizont Hotel</h1>
+      <h2>login</h2>
+      <label for="">Nome</label>
+      <br/>
+      <input type="text" name="nome" value="" placeholder="Nome" required> <br>
+      <label>Sobrenome</label>
+      <br/>
+      <input type="text" name="sobrenome" value="" placeholder="Sobrenome" required>
+      <br>
+      <label for="">Nascimento</label>
+      <br/>
+      <input type="date" name="nascimento" value="" required>
+      <br>
+      <label for="">Saldo</label>
+      <br/>
+      <input type="number" step="0.01" maxlength="18" name="saldo" value="" placeholder="R$" required>
+      <br>
+      <label for="">E-mail</label>
+      <br/>
+      <input type="email" maxlength="255" name="email" value="" placeholder="Email" required>
+      <br>
+      <label for="">Senha</label>
+      <br/>
+      <input type="password" name="senha" value="" placeholder="Digitei sua Senha" required>
+      <br/>
+      <label for="">CPF</label>
+      <br/>
+      <input type="text" maxlength="14" name="CPF" value="" placeholder="Digite seu CPF"> <br>
+
+      <a href="../home.php"><input type="button" value="Cancela" ></a>
+      <input style="margin: 8px;" type="submit" name="enviar" value="Registrar">
+
+    </form>
+  </body>
+</html>
