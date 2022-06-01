@@ -736,6 +736,53 @@ Secleted for Cont/
   border-radius: 25px;
   height: 50px;
   color: blue;
-  font-size: 18px;
+  font-size: 18pxhp;
   border: 2px solid blue;
+}
+/*
+=========================
+/Servicos De Hotel
+=========================
+*/
+#ServicosDoHotel{  
+  width: 100vw;
+  height: 1280px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.Servicos{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100vw;
+  height: 300px;
+}
+#S1{
+  display: flex;
+  background-image: url("../images/layout/Serviços/pexels-chan-walrus-941864.jpg");
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+
+}
+#S2{
+  display: flex;
+  background-image: url("../images/layout/Serviços/pexels-rodnae-productions-7915237.jpg");
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position-x: left;
+}
+#S3{
+  display: flex;
+  background-image: url("../images/layout/Serviços/serviçodequarto.jpeg");
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+#S4{
+  display: flex;
+  background-image: url("../images/layout/Serviços/cozinha.jpeg");
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position-x: left;
 }
